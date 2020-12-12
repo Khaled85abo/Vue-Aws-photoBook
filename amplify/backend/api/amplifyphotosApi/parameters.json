@@ -1,0 +1,11 @@
+{
+    "AppSyncApiName": "amplifyphotosApi",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": false,
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authphotobook73cb0921",
+            "Outputs.UserPoolId"
+        ]
+    }
+}
